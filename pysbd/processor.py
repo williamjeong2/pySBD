@@ -137,8 +137,9 @@ class Processor(object):
 
     def replace_periods_before_numeric_references(self):
          # https://github.com/diasks2/pragmatic_segmenter/commit/d9ec1a352aff92b91e2e572c30bb9561eb42c703
-        self.text = re.sub(self.lang.NUMBERED_REFERENCE_REGEX,
-                      r"∯\2\r\7", self.text)
+        # self.text = re.sub(self.lang.NUMBERED_REFERENCE_REGEX,
+        #               r"∯\2\r\7", self.text)
+        self.text = self.text
 
     def consecutive_underscore(self, txt):
         # Rubular: http://rubular.com/r/fTF2Ff3WBL
